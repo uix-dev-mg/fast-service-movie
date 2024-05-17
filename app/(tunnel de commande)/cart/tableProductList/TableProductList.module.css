@@ -1,0 +1,138 @@
+.table {
+  max-width: 800px;
+  margin: 30px auto 80px auto;
+}
+.table table {
+  border: 1px solid hsl(var(--border));
+  padding: 2rem;
+  background: #ffffff36;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 15px 20px hsl(0deg 0% 0% / 5%);
+  border-radius: var(--radius);
+  display: block;
+}
+
+.cartTotal_item {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 2rem;
+  font-family: var(--poppins);
+  justify-content: space-between;
+}
+.cartTotal_item p {
+  margin: 0;
+  display: flex;
+}
+.cartTotal {
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  max-width: 400px;
+  margin-left: auto;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 15px 20px hsl(0deg 0% 0% / 5%);
+  margin-bottom: 20px;
+}
+.table_header {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.table_header h1 {
+  margin: 0;
+  color: hsl(var(--secondary));
+}
+
+.table_td_card {
+  vertical-align: baseline;
+  width: 50%;
+}
+.table_td_card > div {
+  align-items: flex-start;
+}
+.table_thead {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.table_th_close {
+  width: 10%;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.table_th_product {
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.table_th_category {
+  width: 15%;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.table_th_subtotal {
+  width: 20%;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.table_td_close {
+  vertical-align: top;
+  width: 10%;
+}
+.table_td_close_btn_container {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table_td_close_btn_container > button {
+  background-color: hsl(var(--destructive));
+  border: 0;
+  outline: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  color: hsl(var(--background));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: initial;
+}
+.table_td_close_btn_container > button:hover {
+  color: hsl(var(--secondary));
+  border: 1px solid hsl(var(--secondary));
+  background-color: hsl(var(--background));
+}
+.table_td_close_btn_container > button:hover span {
+  color: hsl(var(--secondary));
+}
+.table_td_category {
+  vertical-align: top;
+  width: 15%;
+}
+@media screen and (max-width: 767px) {
+  .table_th_category,
+  .table_td_category {
+    display: none;
+  }
+  .table_th_close,
+  .table_th_product,
+  .table_th_category {
+    padding: 5px;
+  }
+  .table_td_close {
+    padding: 0;
+  }
+  .table table {
+    padding: 5px;
+  }
+}
